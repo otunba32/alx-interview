@@ -5,9 +5,6 @@ Pascal's Triangle
 """
 
 def pascal_triangle(n):
-    if n <= 0:
-        return []
-
     triangle = []
     for i in range(n):
         row = []
@@ -17,5 +14,9 @@ def pascal_triangle(n):
             else:
                 row.append(triangle[i - 1][x] + triangle[i - 1][x - 1])
         triangle.append(row)
-
     return triangle
+
+"""# Call the function with n = 5
+result = pascal_triangle(5)
+print(result)"""
+
