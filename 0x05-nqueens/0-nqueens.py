@@ -2,7 +2,7 @@
 """
     Description: The N queens puzzle is the challenge of placing N non-attacking 
                  queens on an NxN chessboard. Write a program tha solve the N
-                  queens problem.
+                 queens problem.
 
     Usage: nqueen4s N:
             If the user called the program with the wrong number of arguments,
@@ -34,7 +34,7 @@ def print_board(board):
             if col == 1:
                 value.append(i)
                 value.append(j)
-        new_list. append(value)
+        new_list.append(value)
 
     print(new_list)
 
