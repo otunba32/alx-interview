@@ -40,3 +40,4 @@ finally:
         value = status_code[key]
         if value != 0 :
             print('{}: {}'.format(key, value))
+            
