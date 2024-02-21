@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Script that reads stdin line by line and computes metrics """
+"""Script that reads stdin line by line and computes metrics"""
 
 import sys
 
@@ -13,6 +13,7 @@ status_code = {'200': 0,
                '404': 0,
                '405': 0,
                '500': 0}
+
 try:
     for line in sys.stdin:
         args = line.split(' ')
@@ -38,6 +39,5 @@ finally:
     sorted_keys = sorted(status_code.keys())
     for key in sorted_keys:
         value = status_code[key]
-        if value != 0 :
+        if value != 0:
             print('{}: {}'.format(key, value))
-            
