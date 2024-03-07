@@ -1,4 +1,4 @@
-#!/usr/python3
+#!/usr/bin/python3
 """
 Island Perimeter:
     returns the perimter of the island described in the grid
