@@ -13,7 +13,7 @@ def isWinner(x, nums):
     primes = [True for _ in range(1, n + 1, 1)]
     primes[0] = False
     for i, is_primes in enumerate(primes, 1):
-        if i == 1 or  is_primes:
+        if i == 1 or not is_primes:
             continue
         for j in range(i + i, n + 1, i):
             primes[j - 1] = False
